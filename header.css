@@ -1,0 +1,43 @@
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    gap: 0 25px;
+
+}
+
+.link {
+    color:black;
+    text-decoration: none;
+    
+}
+
+.btn {
+    display: flex;
+    gap: 0 14px;
+}
+.btn-item {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 19px 10px 14px;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.img {
+    margin-right: 12px;
+
+}
+.btn-item-orange {
+    background: #EF7F04;
+}
+
+.btn-item-blue {
+    background: #3B3A63;
+}
