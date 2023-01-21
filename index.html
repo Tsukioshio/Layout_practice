@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,16 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container header-wrapper">
-            <img src="./images/logo.svg" alt="">
+            <div class="btn">
+                <img id="menu-button" src="./images/burger-menu.svg" alt="" width="40px">
+                <img src="./images/logo.svg" alt="">
+            </div>
             <nav>
                 <ul class="list">
                     <li class="list-item"><a href="" class="link">Услуги</a></li>
@@ -35,8 +41,68 @@
             </div>
         </div>
     </header>
-    <section class="services">
-        <h2>Наши Услуги</h2>
+
+    <main class="main">
+        <div class="container-main">
+            <div class="left">
+                <h1 class="main__title">
+                    <span class="main__title_orange">Окна Хаус -</span> 
+                    Профессиональный подход к остеклению
+                </h1>
+
+                <div class="main__advantages">
+                    <div class="main__advantages-item item">
+                        <img src="./images/logo-main.svg" alt="" class="item__icon">
+                        <p class="item__description">
+                            Современные окна и балконные конструкции по доступным ценам
+                        </p>
+                    </div>
+
+                        <div class="main__advantages-item item">
+                            <img src="./images/logo-main2.svg" alt="" class="item__icon">
+                            <p class="item__description">
+                                Квалифицированный подход к решению задач любой сложности
+                            </p>
+                        </div>
+
+                            <div class="main__advantages-item item">
+                                <img src="./images/logo-main3.svg" alt="" class="item__icon item__icon-3">
+                                <p class="item__description">
+                                    Гарантия высочайшего качества нашей продукции
+                                </p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="right">
+                <form action="" class="form">
+                    <h2 class="form__title">
+                        Вызвать замершика на дом
+                    </h2>
+                    <input type="text" placeholder="Представьтесь, пожалуйста" class="form__input">
+                    <input type="text" placeholder="Номер телефона" class="form__input">
+                    <input type="email" placeholder="E-mail" class="form__input">
+
+                    <div class="form-group">
+                        <input type="checkbox" id="html">
+                        <label for="html">Согласен на обработку персональных данных 
+                        в соответствии с <span class="form-group__text">политикой конфиденциальности</span></label>
+                    </div>
+
+                    <button class="form__submit">
+                        Отправить заявку
+                    </button>
+                    <div class="form__ruller">
+                        <img src="./images/ruller.png" alt="">
+                    </div>
+                </form>
+        </div>
+        </div>
+    </main>
+
+    <section>
+        <h2 class="center__title">Наши Услуги</h2>
     </section>
     <div class="container-2">
         <div class="block">
@@ -95,71 +161,75 @@
     </div>
 
     <section>
-        <h2>О компаний</h2>
+        <h2 class="center__title">О компаний</h2>
     </section>
 
     <div class="about-company">
-    <div class="about-company__buttons">
-        <button class="about-company__button about-company__button--active">Описание</button>
-        <button class="about-company__button">Как мы работаем</button>
-        <button class="about-company__button">Отзывы</button>
-        <button class="about-company__button">Сертификаты</button>
+        <div class="about-company__buttons">
+            <button class="about-company__button about-company__button--active">Описание</button>
+            <button class="about-company__button">Как мы работаем</button>
+            <button class="about-company__button">Отзывы</button>
+            <button class="about-company__button">Сертификаты</button>
         </div>
 
 
-    <div class="about-company__card">
-        <div class="about-company__card__description">
-            <img src="./images/logo-company.svg" alt="">
-            <p>Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости. Окно
-                - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали
-                правильный выбор.</p>
+        <div class="about-company__card">
+            <div class="about-company__card__description">
+                <img src="./images/logo-company.svg" alt="">
+                <p>Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости.
+                    Окно
+                    - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы
+                    сделали
+                    правильный выбор.</p>
+            </div>
+            <img src="./images/photo-company.svg" alt="logo-company">
         </div>
-        <img src="./images/photo-company.svg" alt="logo-company">
-    </div>
     </div>
     <div class="container-3">
 
-    <div class="block-services__one">
-        <img src="./images/logo-company-1.svg" alt="block-one">
-        <h3 class="block-services__one__title">Профессионализм</h3>
-        <p class="block-services__one__description">Бригада профессиональных мастеров по монтажу и обслуживанию</p>
-    </div>
+        <div class="block-services__one">
+            <img src="./images/logo-company-1.svg" alt="block-one">
+            <h3 class="block-services__one__title">Профессионализм</h3>
+            <p class="block-services__one__description">Бригада профессиональных мастеров по монтажу и обслуживанию</p>
+        </div>
 
-    <div class="block-services__one">
-        <img src="./images/logo-company-2.svg" alt="block-one">
-        <h3 class="block-services__one__title block-services__one__title_0">Ценообразование</h3>
-        <p class="block-services__one__description block-services__one__description_0">Лучшие цены на рынке пластиковых окон</p>
-    </div>
+        <div class="block-services__one">
+            <img src="./images/logo-company-2.svg" alt="block-one" class="logo-company-2">
+            <h3 class="block-services__one__title block-services__one__title_0">Ценообразование</h3>
+            <p class="block-services__one__description block-services__one__description_0">Лучшие цены на рынке
+                пластиковых окон</p>
+        </div>
 
-    <div class="block-services__one">
-        <img src="./images/logo-company-3.svg" alt="block-one">
-        <h3 class="block-services__one__title">Мобильность</h3>
-        <p class="block-services__one__description">Заключение договора на дому</p>
-    </div>
+        <div class="block-services__one">
+            <img src="./images/logo-company-3.svg" alt="block-one">
+            <h3 class="block-services__one__title">Мобильность</h3>
+            <p class="block-services__one__description">Заключение договора на дому</p>
+        </div>
 
-    <div class="block-services__one">
-        <img src="./images/logo-company-4.svg" alt="block-one">
-        <h3 class="block-services__one__title">Лояльность</h3>
-        <p class="block-services__one__description">99% клиентов рекомендуют нас своим друзьям</p>
-    </div>
+        <div class="block-services__one">
+            <img src="./images/logo-company-4.svg" alt="block-one">
+            <h3 class="block-services__one__title">Лояльность</h3>
+            <p class="block-services__one__description">99% клиентов рекомендуют нас своим друзьям</p>
+        </div>
 
-    <div class="block-services__one">
-        <img src="./images/logo-company-5.svg" alt="block-one" class="logo-company-5">
-        <h3 class="block-services__one__title block-services__one__title_0">Скорость</h3>
-        <p class="block-services__one__description block-services__one__description_0">Короткие сроки установки изделий</p>
-    </div>
+        <div class="block-services__one">
+            <img src="./images/logo-company-5.svg" alt="block-one" class="logo-company-5">
+            <h3 class="block-services__one__title block-services__one__title_0">Скорость</h3>
+            <p class="block-services__one__description block-services__one__description_0">Короткие сроки установки
+                изделий</p>
+        </div>
 
-    <div class="block-services__one">
-        <img src="./images/logo-company-6.svg" alt="block-one">
-        <h3 class="block-services__one__title">Служба качества</h3>
-        <p class="block-services__one__description">Безупречное качество и контроль изделий ПВХ</p>
+        <div class="block-services__one">
+            <img src="./images/logo-company-6.svg" alt="block-one">
+            <h3 class="block-services__one__title">Служба качества</h3>
+            <p class="block-services__one__description">Безупречное качество и контроль изделий ПВХ</p>
+        </div>
     </div>
-</div>
-<div class="button-under">
-<button class="button-under__0">
-    <img src="./images/logo-button.svg" alt="logo-button">
-    <p>Оформить заявку на замер</p>
-</button>
-</div>
+    <div class="button-under">
+        <button class="button-under__0">
+            <img src="./images/logo-button.svg" alt="logo-button">
+            <p>Оформить заявку на замер</p>
+        </button>
+    </div>
 </body>
 </html>
