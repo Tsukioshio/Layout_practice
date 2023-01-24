@@ -214,6 +214,136 @@ color: #000000;
 }
 
 button:hover {
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: pointer;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+.portfolio {
+    background-color: #FFFFFF;
+    width: 1200px;
+    height: 410px;
+    margin: 0 auto;
+}
+
+.portfolio__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2F2F51;
+    text-align: center;
+    padding: 48px 0px;
+}
+
+.portfolio__photos {
+    display: flex;
+    justify-content: center;
+    column-gap: 45px;
+}
+
+.portfolio__photo {
+width: 215px;
+height: 215px;
+}
+
+@media (max-width:992px) {
+.portfolio {
+    width: 100%;
+}
+.portfolio__photo_4 {
+    display: none;
+}
+}
+
+.faq {
+    width: 1200px;
+    /* height: 791px; */
+    background-color: #EF7F1A;
+    border-radius: 7px;
+    margin: auto;
+    padding: 0px 101px;
+    padding-bottom: 65px;
+}
+
+.faq__title {
+    Font-family: "roboto", sans-serif;
+Font-style: Bold;
+font-size: 24px;
+Line-height: 28px;
+padding-top: 40px;
+color: white;
+padding-bottom: 50px;
+text-align: center;
+}
+
+.details-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+details {
+    background-color: #EEEEF3;
+    border-radius: 3px;
+    padding: 30px 20px;
+    width: 100%;
+    position: relative
+}
+
+details:hover {
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #EF7F04;
+}
+
+summary {
+    list-style: none;
+    Font-family: "roboto" sans-serif;
+    Font-style: Bold;
+    Font-size: 18px;
+    Line-height: 21px;
+    color: #2F2F51;
+}
+
+summary:after {
+    content: "";
+    background-image: url(./images/Vector-faq.svg);
+    background-repeat: no-repeat;
+    background-size: 28px 14px;
+    display: inline-block;
+    height: 15px;
+    width: 28px;
+    position: absolute;
+    right: 20px;
+}
+
+details[open] > summary:after  {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+details > p {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    color: black;
+    Font-family: "roboto" sans-serif;
+Font-style: normal;
+Font-size: 16px;
+Line-height: 19px;
+}
+
+details:hover > summary:after {
+    filter: invert(56%) sepia(62%) saturate(2013%) hue-rotate(351deg) brightness(97%) contrast(93%);
+}
+
+@media screen and (max-width: 992px) {
+    .faq {
+    width: 880px;
+    }
 }
