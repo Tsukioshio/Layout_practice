@@ -1,8 +1,10 @@
 .main {
     background: url("./images/page-main.svg");
-    padding: 70px 442px;
     height: 562px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-main {
@@ -126,9 +128,6 @@ color: #2F2F51;
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-
 .form-group input {
     padding: 0;
     height: initial;
@@ -207,10 +206,12 @@ color: #000000;
 }
 
 .form__ruller {
-    /* content: url("./images/ruller.png"); */
+    width: 100%;
+    margin-left: -47px;
+}
+
+.ruller {
     position: absolute;
-    left: 1067px;
-    top: 521px;
 }
 
 button:hover {
