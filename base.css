@@ -122,23 +122,34 @@
 
 .about-company__card {
     display: flex;
-    height: 461px;
+    /* height: 461px; */
     background-color: white;
     justify-content: space-between;
 }
 
+
+.about-company__logo {
+    width: 50%;
+}
+
+.about-company__card__description {
+    position: relative;
+    width: 50%;
+}
 .about-company__card__description > img {
 margin: 46px 50px;
 }
 
 .about-company__card__description > p {
-    margin: 0px 52px 0px 248px;
+    /* margin: 0px 52px 0px 248px; */
     width: 270px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 22px;
+position: absolute;
+right: 10px;
 }
 
 .block-services {
@@ -188,10 +199,15 @@ padding-left: 16px;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 101px;
-    column-gap: 10px;
+    column-gap: 20px;
     margin: auto;
     width: 1200px;
-    display: flex;
+}
+
+@media screen and (max-width:1200px) {
+    .container-3 {
+        width: 100%;
+    }
 }
 
 .logo-company-5 {
@@ -218,7 +234,7 @@ align-items: center;
 .button-under {
     justify-content: center;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .button-under__0 > img {
