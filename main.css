@@ -64,13 +64,9 @@
     border-radius: 10px;
 }
 
-@media (max-width:992px) {
+@media screen and (max-width:1200px) {
     .form {
         display: none;
-    }
-    .container-3 {
-        width: 100%;
-        padding: 70px 80px;
     }
     .logo-company {
         margin-left: 0px;
@@ -90,9 +86,6 @@
     .about-company {
         width: 100%;
     }
-    .about-company__card__description > p {
-        margin: 0px 52px 0px 104px;
-    }
     .main {
         padding: 70px 77px;
     }
@@ -100,6 +93,19 @@
         gap: 38px;
     }
 }
+
+@media screen and (max-width:1100px) {
+    .about-company__card__description > img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-company__card {
+        height: 387px;
+    }
+}
+
 .form__title {
     text-align: center;
     margin-bottom: 27px;
@@ -212,6 +218,7 @@ color: #000000;
 
 .ruller {
     position: absolute;
+    width: 418px
 }
 
 button:hover {
@@ -251,7 +258,7 @@ width: 215px;
 height: 215px;
 }
 
-@media (max-width:992px) {
+@media screen and (max-width:1200px) {
 .portfolio {
     width: 100%;
 }
@@ -268,6 +275,12 @@ height: 215px;
     margin: auto;
     padding: 0px 101px;
     padding-bottom: 65px;
+}
+
+@media screen and (max-width: 1200px) {
+    .faq {
+    width: 100%;
+    }
 }
 
 .faq__title {
@@ -305,11 +318,12 @@ details:hover {
 
 summary {
     list-style: none;
-    Font-family: "roboto" sans-serif;
-    Font-style: Bold;
     Font-size: 18px;
     Line-height: 21px;
     color: #2F2F51;
+    font-weight: 700;
+    color: #2F2F51;
+    font-family: "robot", sans-serif;
 }
 
 summary:after {
@@ -343,8 +357,3 @@ details:hover > summary:after {
     filter: invert(56%) sepia(62%) saturate(2013%) hue-rotate(351deg) brightness(97%) contrast(93%);
 }
 
-@media screen and (max-width: 992px) {
-    .faq {
-    width: 880px;
-    }
-}
